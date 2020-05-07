@@ -1440,89 +1440,92 @@ footer {
         font-weight: normal;
         line-height: 1.4;
         font-weight: 500; } }
-  .accordions .accordion-item {
+  .accordions .accordion-item:last-of-type .accordion-title {
+    border-bottom: 1px solid #000; }
+  .accordions .accordion-item:last-of-type .accordion-content {
+    border-top: none;
+    border-bottom: 1px solid #000; }
+  .accordions .accordion-item .accordion-title {
+    position: relative;
+    cursor: pointer;
+    padding: 22px 38px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
     border: 1px solid #000;
     border-bottom: none; }
-    .accordions .accordion-item:last-of-type {
-      border-bottom: 1px solid #000; }
-    .accordions .accordion-item .accordion-title {
-      position: relative;
-      cursor: pointer;
-      padding: 22px 38px;
-      -webkit-transition: all 0.4s;
-      -o-transition: all 0.4s;
-      transition: all 0.4s;
-      border-bottom: none; }
+    @media (max-width: 768px) {
+      .accordions .accordion-item .accordion-title {
+        padding: 16px 24px; } }
+    @media (max-width: 414px) {
+      .accordions .accordion-item .accordion-title {
+        padding: 16px; } }
+    .accordions .accordion-item .accordion-title h4 {
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      color: #000;
+      font-size: 20px;
+      line-height: 1.5;
+      font-weight: normal;
+      line-height: 1.4;
+      font-weight: 700; }
       @media (max-width: 768px) {
-        .accordions .accordion-item .accordion-title {
-          padding: 16px 24px; } }
-      @media (max-width: 414px) {
-        .accordions .accordion-item .accordion-title {
-          padding: 16px; } }
-      .accordions .accordion-item .accordion-title h4 {
-        margin: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        color: #000;
-        font-size: 20px;
-        line-height: 1.5;
-        font-weight: normal;
-        line-height: 1.4;
-        font-weight: 700; }
-        @media (max-width: 768px) {
-          .accordions .accordion-item .accordion-title h4 {
-            font-size: 16px;
-            line-height: 1.5;
-            font-weight: normal;
-            line-height: 22px;
-            font-weight: 700; } }
-      .accordions .accordion-item .accordion-title .fa-chevron-down {
-        -webkit-transform: rotate(0);
-            -ms-transform: rotate(0);
-                transform: rotate(0);
-        -webkit-transition: 0.4s;
-        -o-transition: 0.4s;
-        transition: 0.4s; }
-      .accordions .accordion-item .accordion-title .chevron-top {
-        -webkit-transform: rotate(-180deg);
-            -ms-transform: rotate(-180deg);
-                transform: rotate(-180deg); }
-      .accordions .accordion-item .accordion-title svg {
-        font-size: 20px; }
-        @media (max-width: 768px) {
-          .accordions .accordion-item .accordion-title svg {
-            font-size: 18px; } }
-    .accordions .accordion-item .accordion-content {
-      display: none;
-      line-height: 1.7;
-      padding: 22px 38px;
-      background-color: #F2F2F2;
-      border-top: 1px solid #000; }
+        .accordions .accordion-item .accordion-title h4 {
+          font-size: 16px;
+          line-height: 1.5;
+          font-weight: normal;
+          line-height: 22px;
+          font-weight: 700; } }
+    .accordions .accordion-item .accordion-title .fa-chevron-down {
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+              transform: rotate(0);
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s; }
+    .accordions .accordion-item .accordion-title .chevron-top {
+      -webkit-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+              transform: rotate(-180deg); }
+    .accordions .accordion-item .accordion-title svg {
+      font-size: 20px; }
       @media (max-width: 768px) {
-        .accordions .accordion-item .accordion-content {
-          padding: 16px 24px; } }
-      @media (max-width: 414px) {
-        .accordions .accordion-item .accordion-content {
-          padding: 16px; } }
-      .accordions .accordion-item .accordion-content.active {
-        display: block; }
-      .accordions .accordion-item .accordion-content p {
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.5;
-        font-weight: normal; }
-        @media (max-width: 768px) {
-          .accordions .accordion-item .accordion-content p {
-            font-size: 14px;
-            line-height: 1.5;
-            font-weight: normal;
-            line-height: 21px; } }
+        .accordions .accordion-item .accordion-title svg {
+          font-size: 18px; } }
+  .accordions .accordion-item .accordion-content {
+    display: none;
+    line-height: 1.7;
+    padding: 22px 38px;
+    background-color: #F2F2F2;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid; }
+    @media (max-width: 768px) {
+      .accordions .accordion-item .accordion-content {
+        padding: 16px 24px; } }
+    @media (max-width: 414px) {
+      .accordions .accordion-item .accordion-content {
+        padding: 16px; } }
+    .accordions .accordion-item .accordion-content.active {
+      display: block; }
+    .accordions .accordion-item .accordion-content p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: normal; }
+      @media (max-width: 768px) {
+        .accordions .accordion-item .accordion-content p {
+          font-size: 14px;
+          line-height: 1.5;
+          font-weight: normal;
+          line-height: 21px; } }
 
 /*# sourceMappingURL=all.css.map */
