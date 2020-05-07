@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>內頁</title>
+  <!-- css link -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <!-- js link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <button class="openbtn" onclick="openNav()">
+            <i class="fas fa-bars "></i>
+        </button> 
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="fas fa-bars "></i>
+            </a>
+            <ul>
+                <li><a href="#">系列鏡框</a></li>
+                <li><a href="#">門市據點</a></li>
+                <li><a href="#">部落格</a></li>
+                <li><a href="page.html">常見問題</a></li>
+            </ul> 
+        </div>
+        <h1 class="logo">
+            <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+        </h1>
+        <div class="menu">
+            <ul>
+                <li><a href="#">系列鏡框</a></li>
+                <li><a href="#">門市據點</a></li>
+                <li><a href="#">部落格</a></li>
+                <li><a href="page.html">常見問題</a></li>
+            </ul>
+        </div>
+    </header>
+
+    
+<main>
+    <section class="page-banner">
+        <div class="page-slogn">
+            <h2>常見問題</h2>
+            <img src="./assets/images/help-circle-sharp.svg" alt="">
+        </div>
+    </section>
+    <section class="accordions">
+		<ul class="container">
+			<h3>我想詢問配鏡問題</h3>
+			<li class="accordion-item">
+				<div id="defaultOpen" class="accordion-title" data-tab="item1">
+					<h4>Q1.請問可否自備鏡框單配鏡片？<i class="fas fa-chevron-down"></i></h4>
+				</div>
+				<div class="accordion-content" id="item1">
+					<p>A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。<br>當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。<br>他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。</p>
+				</div>
+			</li>
+			<li class="accordion-item">
+				<div class="accordion-title" data-tab="item2">
+					<h4>Q2.眼鏡都可以20分鐘取件嗎？<i class="fas fa-chevron-down"></i></h4>
+				</div>
+				<div class="accordion-content" id="item2">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</li>
+			<li class="accordion-item">
+				<div class="accordion-title" data-tab="item3">
+					<h4>Q3.散光鏡片需要額外加價嗎？<i class="fas fa-chevron-down"></i></h4>
+				</div>
+				<div class="accordion-content" id="item3">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</li>
+			<li class="accordion-item">
+				<div class="accordion-title" data-tab="item4">
+					<h4>Q4.我可以使用舊眼鏡的度數配鏡片嗎？<i class="fas fa-chevron-down"></i></h4>
+				</div>
+				<div class="accordion-content" id="item4">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</li>
+			<li class="accordion-item">
+				<div class="accordion-title" data-tab="item5">
+					<h4>Q5.請問可以單購買鏡框嗎？<i class="fas fa-chevron-down"></i></h4>
+				</div>
+				<div class="accordion-content" id="item5">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</li>
+		</ul>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="f-top">
+                <div class="f-wrap">
+                    <ul class="f-menu">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="#">系列鏡框</a></li>
+                        <li><a href="#">門市據點</a></li>
+                        <li><a href="#">部落格</a></li>
+                        <li><a href="#">常見問題</a></li>
+                    </ul>
+                    <ul class="f-contact">
+                        <li>
+                            <a href="tel:0800-000-000">
+                                <img src="./assets/images/ic_phone_48px.svg" alt="">
+                                <span>0800-000-000</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:glasses@business.com">
+                                <img src="./assets/images/ic_mail_outline_24px.svg  " alt="">
+                                <span>glasses@business.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="f-social">
+                    <li>
+                        <a href="#"><img src="./assets/images/ic_social_fb.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/images/ic_social_ig.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./assets/images/ic_social_line.svg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f-copy">
+                <ul class="f-copyLogo">
+                    <li>
+                        <h2><a href="#"><img src="./assets/images/logo.png" alt=""></a></h2>
+                    </li>
+                </ul>
+                <ul class="f-copyCnt">
+                    <li>
+                        <ul class="copyright">
+                            <li>Copyright © 2020 Glasses.All rights reserved.</li>
+                        </ul>
+                        <ul class="copy-link">
+                            <li><a href="#">隱私權政策</a></li>
+                            <li class="service"><a href="#">服務條款</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/all.js"></script>
+
+</body>
+
+</html>
